@@ -1,42 +1,27 @@
-# Scoop Bucket Template
+# pianone-bucket
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+A curated Scoop bucket for useful apps not yet available in the main or popular community buckets.
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+This bucket aims to stay small and maintainable. Search results are leads for possible software, not a promise that an app will be added. Apps are considered based on their usefulness, trustworthy sources, reliable downloads and checksums, Scoop-compatible install and uninstall behavior, and ongoing maintenance cost.
 
-## How do I use this template?
+## Usage
 
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Workflow permissions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Ensure `Read repository contents and packages permissions` is selected.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
-
-## How do I install these manifests?
-
-After manifests have been committed and pushed, run the following:
+Add the bucket:
 
 ```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
+scoop bucket add pianone-bucket https://github.com/Nliuco/pianone-bucket
 ```
 
-## How do I contribute new manifests?
+Install an app from it:
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+```pwsh
+scoop install pianone-bucket/<app-name>
+```
+
+Replace `<app-name>` with the manifest name.
+
+## Contributing
+
+Before proposing an app, check whether it is already available in Scoop's `main`, `extras`, or a well-maintained community bucket. Please include its official project and download sources, and explain why it is useful to maintain here.
+
+New manifests should follow the [Scoop app manifest guidelines](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) and the [Scoop contribution guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md).
