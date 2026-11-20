@@ -1,0 +1,20 @@
+{
+    "version": "1.06",
+    "description": "内网穿透与虚拟组网工具。",
+    "homepage": "https://www.natpierce.cn/",
+    "license": "Proprietary",
+    "url": "https://download.natpierce.cn/windows/natpierce-win-v1.06.zip",
+    "hash": "bfad4b33d8601c2d6bdcc8a21bac887221c9e5e1a14f909d6a15221e7f08fa1b",
+    "notes": [
+        "NatPierce 的安装路径不能包含中文或空格。Scoop 默认将软件安装在用户目录下；如果 Windows 用户名含中文或空格，默认安装路径也可能不兼容。可将 Scoop 安装在纯英文且无空格的路径。",
+        "软件包含自动更新功能；自动更新可能不由 Scoop 管理。",
+        "NatPierce is proprietary software. Use is subject to the official license and service agreement: https://natpierce.cn/tempdir/protocol.html.",
+        "If the rights holder has concerns about this manifest or its official download link, please contact the maintainer via https://github.com/Nliuco/pianone-bucket/issues. We will review the request promptly and remove the relevant content if appropriate."
+    ],
+    "shortcuts": [
+        [
+            "natpierce.exe",
+            "NatPierce"
+        ]
+    ]
+}
