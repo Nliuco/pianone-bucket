@@ -1,8 +1,16 @@
 # pianone-bucket
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 A curated Scoop bucket for useful apps not yet available in the main or popular community buckets.
 
 This bucket aims to stay small and maintainable. Search results are leads for possible software, not a promise that an app will be added. Apps are considered based on their usefulness, trustworthy sources, reliable downloads and checksums, Scoop-compatible install and uninstall behavior, and ongoing maintenance cost.
+
+## Available apps
+
+| App | Description |
+| --- | --- |
+| [NatPierce](https://www.natpierce.cn/) (`natpierce`) | Network tunneling and virtual networking. |
 
 ## Usage
 
